@@ -14,12 +14,22 @@ public class SpeakerServiceImpl implements SpeakerService {
     //private SpeakerRepository repository = new HibernateSpeakerRepositoryImpl();
     private SpeakerRepository repository;
 
+    public SpeakerServiceImpl() {
+        System.out.println("SpeakerServiceImpl no arg constructor");
+    }
+
+    public SpeakerServiceImpl(SpeakerRepository repository) {
+        System.out.println("SpeakerServiceImpl repository constructor");
+        this.repository = repository;
+    }
+
     @Override
     public List<Speaker> findAll(){
         return repository.findAll();
     }
 
     public void setSpeakerRepository(SpeakerRepository repository) {
+        System.out.println("SpeakerServiceImpl setter");
         this.repository = repository;
     }
 }
