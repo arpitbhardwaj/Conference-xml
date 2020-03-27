@@ -1,4 +1,4 @@
 # Project exclude paths
 /target/
 .idea
-Conference.iml
+Conference-xml.iml

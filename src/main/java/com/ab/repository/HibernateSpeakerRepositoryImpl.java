@@ -1,7 +1,6 @@
 package com.ab.repository;
 
 import com.ab.model.Speaker;
-
 import java.util.ArrayList;
 import java.util.List;
 
